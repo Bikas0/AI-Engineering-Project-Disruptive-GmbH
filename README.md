@@ -4,6 +4,8 @@ A cutting-edge AI Engineering Project Disruptive GmbH that combines the power of
 
 ### Please follow the Postman collections
 
+![Alt text](Neo4j.png)
+
 <h3>Features</h3>
 <ol>
   <li><b>Neo4j Knowledge Graph Integration:</b> Organizes and manages structured knowledge for enhanced context-awareness.</li>

@@ -1,0 +1,75 @@
+{
+	"info": {
+		"_postman_id": "cf3eee08-fe7d-4a12-a5b2-e87da7d70b22",
+		"name": "RAG Project",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "32005617",
+		"_collection_link": "https://red-meteor-709251.postman.co/workspace/Bikas~c7320a53-abab-4988-b113-3814b58abb46/collection/32005617-cf3eee08-fe7d-4a12-a5b2-e87da7d70b22?action=share&source=collection_link&creator=32005617"
+	},
+	"item": [
+		{
+			"name": "API Health Check",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "{{base_url}}/api-health"
+			},
+			"response": []
+		},
+		{
+			"name": "Clear Database Data",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"code\": \"7179\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "{{base_url}}/clear-database"
+			},
+			"response": []
+		},
+		{
+			"name": "Upload File For Knowledge Graph",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"type": "file",
+							"src": "/home/bikas/Downloads/Wahlprogramm2020_Muc_web-verlinkt-1-5.pdf"
+						}
+					]
+				},
+				"url": "{{base_url}}/embedding-data"
+			},
+			"response": []
+		},
+		{
+			"name": "Chatbot",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"question\": \"Warum gilt München als attraktiver Wohnort für viele Menschen?\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "{{base_url}}/chat"
+			},
+			"response": []
+		}
+	]
+}
